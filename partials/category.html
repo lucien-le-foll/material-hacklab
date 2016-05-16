@@ -1,0 +1,29 @@
+<h1>Our different tutorials:</h1>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam dolores et nemo saepe vel voluptates! Atque consectetur rem reprehenderit! Animi aperiam debitis delectus deleniti dolore, harum molestiae nam similique.
+</p>
+<md-content layout="row">
+    <md-card class="md-whiteframe-5dp" ng-repeat="category in app.categories">
+        <md-card-title layout-padding>
+            <md-card-title-text>
+                <span class="md-headline">{{ category.name | capitalize }}</span>
+                <span class="md-subhead">{{ category.description }}</span>
+            </md-card-title-text>
+            <md-card-title-media>
+                <div class="md-media-lg card-media">
+                    <img ng-src="/img/category/{{ category.picture }}" alt="{{ category.name}}">
+                </div>
+            </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="center">
+            <md-button ng-click="app.openBottomSheet(category.id)">
+                More
+                <md-icon>more_vert</md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
+</md-content>
+<h2>What can I do with this?</h2>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at cum, dolor excepturi ipsam ipsum nihil nisi officia perspiciatis placeat rerum, saepe suscipit vero, voluptatibus! Doloremque dolores repellat rerum.
+</p>

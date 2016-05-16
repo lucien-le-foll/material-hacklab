@@ -1,0 +1,13 @@
+<md-bottom-sheet class="md-list md-has-header" ng-cloak>
+    <md-subheader>Tutorials in this category</md-subheader>
+    <md-list>
+        <md-list-item ng-repeat="howto in cat_howtos">
+            <md-button
+                    ui-sref="howto({ id : howto.id})"
+                    md-autofocus="$index == 2"
+                    class="md-list-item-content" >
+                <span class="md-inline-list-icon-label">{{ howto.name }}</span>
+            </md-button>
+        </md-list-item>
+    </md-list>
+</md-bottom-sheet>

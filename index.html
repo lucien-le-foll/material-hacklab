@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hacklab_</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- different stylesheets and fonts used -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/angular-material.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+</head>
+<!-- defining the container for the Angular APP -->
+<body id="appCtrl" ng-app="hacklab" ng-controller="AppCtrl as app" layout="column">
+    <md-sidenav class="md-sidenav-left" md-component-id="left">
+        <md-toolbar>
+            <h1 class="md-toolbar-tools">Menu</h1>
+        </md-toolbar>
+        <md-content layout="column">
+            <md-button ui-sref="home"><md-icon>home</md-icon>Home</md-button>
+            <md-button ui-sref="category"><md-icon>slideshow</md-icon>Howtos</md-button>
+            <md-button ui-sref="post"><md-icon>library_add</md-icon>Contribute</md-button>
+            <md-button ui-sref="about"><md-icon>info</md-icon>About</md-button>
+        </md-content>
+    </md-sidenav>
+
+    <md-toolbar layout="row">
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" ng-click="app.toggleLeft()" aria-label="Menu">
+                <md-icon>menu</md-icon>
+            </md-button>
+            <h2><a ui-sref="home"><span>hacklab_</span></a></h2>
+        </div>
+    </md-toolbar>
+
+    <md-content layout-padding class="ui-view-container" ui-view flex layout="column"></md-content>
+
+<script src="/node_modules/angular/angular.js"></script>
+<script src="/node_modules/angular-aria/angular-aria.js"></script>
+<script src="/node_modules/angular-animate/angular-animate.js"></script>
+<script src="/node_modules/angular-material/angular-material.js"></script>
+<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>
