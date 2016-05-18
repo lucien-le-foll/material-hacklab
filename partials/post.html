@@ -1,4 +1,24 @@
-<h1>Post a new tutorial</h1>
-<md-content>
+<md-content layout="row" layout-xs="column" layout-alignment="center" layout-padding>
+    <md-content layout="column" layout-padding>
+        <h2>Post a new howto</h2>
+        <md-input-container>
+            <label>Name it</label>
+            <input type="text" ng-model="howto.name">
+        </md-input-container>
+        <md-input-container>
+            <label>Describe it</label>
+            <textarea ng-model="howto.description"></textarea>
+        </md-input-container>
+        <md-slider-container>
+            <span>Difficulty</span>
+            <md-slider flex md-discrete min="0" max="5" ng-model="howto.difficulty" id="diff-slider"></md-slider>
+        </md-slider-container>
+        <h2>Now?</h2>
+        <p>
+            Add up your different steps to help out people doing this howto
+        </p>
+    </md-content>
+    <md-content layout="row">
 
+    </md-content>
 </md-content>
