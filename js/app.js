@@ -132,9 +132,9 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
         ];
 
         app.steps = [
-            {id : 1, name : 'Start your project', description : "You'll need a basic set of tools and some wood", prev : '', next : 2, picture : '1-1.jpg', howto_id : 1},
-            {id : 2, name : 'Cut the pieces', description : "Take your time, follow the plans and cut the needed pieces", prev : 1, next : 3, picture : '1-2.jpg', howto_id : 1},
-            {id : 3, name : 'Assembly and finish', description : "Take the pieces together following the plan, and GO! Use a coat of oil to finish", prev : 2, next : '', picture : '1-3.jpg', howto_id : 1},
+            {id : 1, n : 1, name : 'Start your project', description : "You'll need a basic set of tools and some wood", prev : '', next : 2, picture : '1-1.jpg', howto_id : 1},
+            {id : 2, n : 2, name : 'Cut the pieces', description : "Take your time, follow the plans and cut the needed pieces", prev : 1, next : 3, picture : '1-2.jpg', howto_id : 1},
+            {id : 3, n : 3, name : 'Assembly and finish', description : "Take the pieces together following the plan, and GO! Use a coat of oil to finish", prev : 2, next : '', picture : '1-3.jpg', howto_id : 1},
         ];
 
         app.comments = [

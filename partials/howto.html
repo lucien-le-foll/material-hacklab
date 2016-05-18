@@ -1,5 +1,5 @@
-<md-content layout="row" layout-xs="column">
-    <md-content flex="33" flex-xs="100" layout="column">
+<md-content layout="row" layout-xs="column" layout-padding>
+    <md-content flex="40" flex-xs="100" layout="column">
         <h1>{{ howto.howto.name | capitalize}}</h1>
         <p>{{ howto.howto.description }}</p>
         <md-list>
@@ -14,7 +14,7 @@
                 </div>
             </md-list-item>
         </md-list>
-        <form layout="column">
+        <form layout="column" layout-padding>
             <md-input-container>
                 <label>Your Name</label>
                 <input type="text" ng-model="comment.name">
@@ -23,15 +23,15 @@
                 <label>Your Comment</label>
                 <textarea ng-model="comment.body"></textarea>
             </md-input-container>
-            <md-button ng-click="howto.addCommentToStep(comment, howto.step)">Send</md-button>
+            <md-button ng-click="howto.addCommentToStep(comment, howto.step)">Send <md-icon>send</md-icon></md-button>
         </form>
     </md-content>
-    <md-content flex="66" flex-xs="100">
+    <md-content flex="60" flex-xs="100">
         <md-divider flex hide-gt-xs></md-divider>
-        <md-card animate-on-change="{{ howto }}">
+        <md-card>
             <img src="/img/steps/{{ howto.step.picture }}" alt="{{ howto.step.name }}">
             <md-card-content>
-                <h2>{{ howto.step.name }}</h2>
+                <h2>Step {{ howto.step.n }} - {{ howto.step.name }}</h2>
                 <p>{{ howto.step.description }}</p>
             </md-card-content>
             <md-card-actions>

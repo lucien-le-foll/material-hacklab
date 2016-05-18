@@ -39,3 +39,38 @@ h1 {
   -webkit-transform: translate3d(100px, 0, 0);
   -moz-transform: translate3d(100px, 0, 0);
   transform: translate3d(100px, 0, 0); }
+
+#logo {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.transparent {
+  background-color: transparent !important; }
+
+.medal img {
+  height: 200px;
+  width: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.homeLarge {
+  height: 400px !important; }
+
+.homeimg {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/pencil.jpg");
+  background-size: cover;
+  background-position: center; }
+  .homeimg h1 {
+    color: #fff;
+    text-shadow: 1px 0.5px #000; }
+  .homeimg p {
+    color: #fff;
+    text-shadow: 1px 0.5px #000; }

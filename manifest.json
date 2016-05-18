@@ -1,0 +1,17 @@
+{
+  "name": "hacklab_",
+  "description": "A simple app to share what you do, and do what you share.",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "icons": {
+    "128": "img/icons/icon_128.png"
+  },
+  "app": {
+    "urls": [
+      "http://hacklab.lucienlefoll.fr/"
+    ],
+    "launch": {
+      "web_url": "http://hacklab.lucienlefoll.fr/"
+    }
+  }
+}

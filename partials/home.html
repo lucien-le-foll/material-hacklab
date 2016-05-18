@@ -1,11 +1,55 @@
-<md-content flex>
-    <h1>Hello</h1>
+<md-content  layout-padding layout="row" layout-xs="column" flex="noshrink" class="homeimg" layout-align="space-around center">
+    <md-content layout="column" layout-align="center center" flex-xs="noshrink" class="transparent">
+        <h1>Welcome to the hacklab_</h1>
+        <p>
+            A place where you can learn how to do things with your actual hands.
+        </p>
+    </md-content>
+    <md-content flex-xs="noshrink" flex="noshrink" layout="column" layout-align="center center"  class="transparent">
+        <img src="img/logo.jpg" alt="logo" id="logo">
+    </md-content>
+</md-content>
+<md-content layout="row" layout-xs="column" flex="noshrink"  layout="column" layout-align="space-around center" layout-padding>
+    <md-content layout="column" layout-align="center center" class="transparent medal" flex-xs="100">
+        <h1>Hello</h1>
+        <img src="img/logo.jpg" alt="medal">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque ea esse et exercitationem, illum inventore ipsam possimus quaerat quam quia sint suscipit ullam vel voluptate. Dolore porro sequi voluptate?</p>
+    </md-content>
+    <md-content layout="column" layout-align="center center" class="transparent medal" flex-xs="100">
+        <h1>It's</h1>
+        <img src="img/logo.jpg" alt="medal">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto dicta eligendi eos et id iste labore magni, nostrum, officiis qui quibusdam quod repudiandae soluta voluptas. Aliquam corporis doloribus quis.</p>
+    </md-content>
+    <md-content layout="column" layout-align="center center" class="transparent medal" flex-xs="100">
+        <h1>Me</h1>
+        <img src="img/logo.jpg" alt="medal">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad distinctio eum ipsam magni neque nisi officia omnis, placeat, quas reiciendis ullam vel vero. Asperiores atque dicta dolorum, magnam nemo quaerat.</p>
+    </md-content>
+</md-content>
+<md-content layout="column" flex="noshrink" layout-padding class="homeimg" layout-align="center center">
+    <h1>Our latest tutorials</h1>
     <p>
-        This is the hacklab_ It's a place for you, to learn how to do stuff with your hands. Start a new project with
-        one of our multiple tutorials, or be part of the community by posting your tutorial, and comment the different
-        projects, here, on the hacklab_
+        Check out the latest we've got to offer.
     </p>
-    <md-button class="md-raised" ui-sref="category">
-        Make Something
-    </md-button>
+    <md-content layout="row" class="transparent">
+        <md-card class="md-whiteframe-5dp" ng-repeat="howto in app.howtos">
+            <md-card-title layout-padding>
+                <md-card-title-text>
+                    <span class="md-headline">{{ howto.name | capitalize }}</span>
+                    <span class="md-subhead">{{ howto.description }}</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media">
+                        <img ng-src="/img/logo.jpg" alt="{{ howto.name}}">
+                    </div>
+                </md-card-title-media>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="center">
+                <md-button ui-sref="howto({id : howto.id})">
+                    Go
+                    <md-icon>add</md-icon>
+                </md-button>
+            </md-card-actions>
+        </md-card>
+    </md-content>
 </md-content>

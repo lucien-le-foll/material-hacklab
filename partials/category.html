@@ -1,8 +1,10 @@
-<h1>Our different tutorials:</h1>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam dolores et nemo saepe vel voluptates! Atque consectetur rem reprehenderit! Animi aperiam debitis delectus deleniti dolore, harum molestiae nam similique.
-</p>
-<md-content layout="row">
+<md-content layout="column" layout-padding flex-xs="noshrink">
+    <h1>Our different tutorials:</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam dolores et nemo saepe vel voluptates! Atque consectetur rem reprehenderit! Animi aperiam debitis delectus deleniti dolore, harum molestiae nam similique.
+    </p>
+</md-content>
+<md-content layout="row" flex-xs="noshrink" class="homeimg">
     <md-card class="md-whiteframe-5dp" ng-repeat="category in app.categories">
         <md-card-title layout-padding>
             <md-card-title-text>
@@ -23,7 +25,9 @@
         </md-card-actions>
     </md-card>
 </md-content>
-<h2>What can I do with this?</h2>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at cum, dolor excepturi ipsam ipsum nihil nisi officia perspiciatis placeat rerum, saepe suscipit vero, voluptatibus! Doloremque dolores repellat rerum.
-</p>
+<md-content layout="column" flex-xs="noshrink" layout-padding>
+    <h2>What can I do with this?</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at cum, dolor excepturi ipsam ipsum nihil nisi officia perspiciatis placeat rerum, saepe suscipit vero, voluptatibus! Doloremque dolores repellat rerum.
+    </p>
+</md-content>
