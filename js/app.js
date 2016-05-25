@@ -124,11 +124,6 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
             {id : 4, name : 'Simple sweater',description : 'Something easy to do!', difficulty : 4, picture : 'sweater.jpg', category_id : 2},
             {id : 5, name : 'Simple headrest',description : 'Something easy to do!', difficulty : 2, picture : 'headrest.jpg', category_id : 2},
             {id : 6, name : 'arcade cabinet',description : 'Something easy to do!', difficulty : 5, picture : 'arcade.jpg', category_id : 3},
-            {id : 7, name : 'Pi Camera',description : 'Something easy to do!', difficulty : 3, picture : 'picamera.jpg', category_id : 3},
-            {id : 8, name : 'Basic bowl',description : 'Something easy to do!', difficulty : 2, picture : 'meteo.jpg', category_id : 4},
-            {id : 9, name : 'Sculpture 101',description : 'Something easy to do!', difficulty : 1, picture : 'meteo.jpg', category_id : 4},
-            {id : 10, name : 'Draw mickey',description : 'Something easy to do!', difficulty : 3, picture : 'meteo.jpg', category_id : 5},
-            {id : 11, name : 'A howto horse',description : 'Something easy to do!', difficulty : 4, picture : 'meteo.jpg', category_id : 5},
         ];
 
         app.steps = [

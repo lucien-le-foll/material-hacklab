@@ -1,6 +1,6 @@
 <md-bottom-sheet class="md-list md-has-header" ng-cloak>
     <md-subheader>Tutorials in this category</md-subheader>
-    <md-list>
+    <md-list ng-if="cat_howtos.length > 0">
         <md-list-item ng-repeat="howto in cat_howtos">
             <md-button
                     ui-sref="howto({ id : howto.id})"
@@ -10,4 +10,7 @@
             </md-button>
         </md-list-item>
     </md-list>
+    <p ng-if="cat_howtos.length == 0">
+        No tutorials yet in this category :(
+    </p>
 </md-bottom-sheet>
