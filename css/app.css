@@ -82,7 +82,7 @@ p {
 .backimg {
   width: 100%;
   height: auto;
-  background-image: url("../img/pencil.jpg");
+  background-image: url("../img/box.jpg");
   background-size: cover;
   background-position: center; }
   .backimg h1 {

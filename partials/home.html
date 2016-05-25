@@ -11,25 +11,34 @@
 </md-content>
 <md-content layout="row" layout-xs="column" flex="noshrink"  layout="column" layout-align="space-around center" layout-padding>
     <md-content layout="column" layout-align="center center" class="transparent medal" flex-xs="100">
-        <h1>Hello</h1>
-        <img src="img/logo.jpg" alt="medal">
+        <h1>Learn</h1>
+        <img src="img/play.png" alt="medal">
         <p>
-            Some stuff here.
+            With our easy to follow tutorials, learn to do a lot of things
         </p>
+        <md-button ui-sref="category" class="md-raised">
+            Check It Out
+        </md-button>
     </md-content>
     <md-content layout="column" layout-align="center center" class="transparent medal" flex-xs="100">
-        <h1>It's</h1>
-        <img src="img/logo.jpg" alt="medal">
+        <h1>Gift</h1>
+        <img src="img/gift.png" alt="medal">
         <p>
-            Some other stuff.
+            Offer presents to people you like, without having to spend loads of money
         </p>
+        <md-button ui-sref="category" class="md-raised">
+            Check It Out
+        </md-button>
     </md-content>
     <md-content layout="column" layout-align="center center" class="transparent medal" flex-xs="100">
-        <h1>Me</h1>
+        <h1>Contribute</h1>
         <img src="img/logo.jpg" alt="medal">
         <p>
-            Some more stuff.
+            Make your knowledge more accessible to others by posting a tutorial
         </p>
+        <md-button ui-sref="post" class="md-raised">
+            Go Post
+        </md-button>
     </md-content>
 </md-content>
 <md-content layout="column" flex="noshrink" layout-padding class="backimg" layout-align="center center">
@@ -46,7 +55,7 @@
                 </md-card-title-text>
                 <md-card-title-media>
                     <div class="md-media-lg card-media">
-                        <img ng-src="/img/logo.jpg" alt="{{ howto.name}}">
+                        <img ng-src="/img/steps/{{howto.id}}-1.jpg" alt="{{ howto.name}}">
                     </div>
                 </md-card-title-media>
             </md-card-title>
