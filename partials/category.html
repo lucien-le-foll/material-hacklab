@@ -1,10 +1,10 @@
-<md-content layout="column" layout-padding flex-xs="noshrink">
+<md-content layout="column" layout-padding flex="noshrink">
     <h1>Our different tutorials:</h1>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam dolores et nemo saepe vel voluptates! Atque consectetur rem reprehenderit! Animi aperiam debitis delectus deleniti dolore, harum molestiae nam similique.
+        Here lies the different categories our website offers. Pick one, see what's inside and then pick the tutorial of your choice!
     </p>
 </md-content>
-<md-content layout="row" flex-xs="noshrink" class="backimg">
+<md-content layout="row" flex="noshrink" class="backimg" layout-align="start center">
     <md-card class="md-whiteframe-5dp" ng-repeat="category in app.categories">
         <md-card-title layout-padding>
             <md-card-title-text>
@@ -25,9 +25,16 @@
         </md-card-actions>
     </md-card>
 </md-content>
-<md-content layout="column" flex-xs="noshrink" layout-padding>
-    <h2>What can I do with this?</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at cum, dolor excepturi ipsam ipsum nihil nisi officia perspiciatis placeat rerum, saepe suscipit vero, voluptatibus! Doloremque dolores repellat rerum.
-    </p>
+<md-content layout="row" layout-xs="column" flex="noshrink" layout-padding>
+    <md-content flex="50" flex-xs="100" layout-padding layout="column" layout-align="center center">
+        <h2>What can I do with this?</h2>
+        <p>
+            The tutorials are written by the members, and reviewed by our staff. Don't forget to take any needed security appliance, to avoid any accident.
+            Don't throw yourself into something that would require you to put yourself in danger (we're looking at you table saw!)
+        </p>
+    </md-content>
+    <md-content flex="50" flex-xs="100" layout-padding layout-align="center center" layout="column">
+        <img src="img/warn.png" alt="warn" class="logo">
+    </md-content>
+
 </md-content>

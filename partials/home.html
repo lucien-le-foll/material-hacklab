@@ -6,7 +6,7 @@
         </p>
     </md-content>
     <md-content layout="column" layout-align="center center" flex-xs="noshrink" class="transparent">
-        <img src="img/logo.jpg" alt="logo" id="logo">
+        <img src="img/logo.jpg" alt="logo" class="logo">
     </md-content>
 </md-content>
 <md-content layout="row" layout-xs="column" flex="noshrink"  layout="column" layout-align="space-around center" layout-padding>
@@ -46,8 +46,8 @@
     <p>
         Check out the latest we've got to offer.
     </p>
-    <md-content layout="row" class="transparent">
-        <md-card class="md-whiteframe-5dp" ng-repeat="howto in app.howtos">
+    <md-content layout="row" class="transparent" flex="noshrink">
+        <md-card class="md-whiteframe-5dp card" ng-repeat="howto in app.howtos">
             <md-card-title layout-padding>
                 <md-card-title-text>
                     <span class="md-headline">{{ howto.name | capitalize }}</span>

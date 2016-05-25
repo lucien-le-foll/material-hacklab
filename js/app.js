@@ -120,16 +120,17 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
         app.howtos = [
             {id : 1, name : 'Simple bench',description : 'Something easy to do!', difficulty : 3, picture : 'bench.jpg', category_id : 1},
             {id : 2, name : 'Simple table',description : 'Something easy to do!', difficulty : 4, picture : 'table.jpg', category_id : 1},
-            {id : 3, name : 'Simple stool',description : 'Something easy to do!', difficulty : 1, picture : 'stool.jpg', category_id : 1},
-            {id : 4, name : 'Simple sweater',description : 'Something easy to do!', difficulty : 4, picture : 'sweater.jpg', category_id : 2},
-            {id : 5, name : 'Simple headrest',description : 'Something easy to do!', difficulty : 2, picture : 'headrest.jpg', category_id : 2},
-            {id : 6, name : 'arcade cabinet',description : 'Something easy to do!', difficulty : 5, picture : 'arcade.jpg', category_id : 3},
+            {id : 3, name : 'Simple headrest',description : 'Something easy to do!', difficulty : 2, picture : 'headrest.jpg', category_id : 2},
+            {id : 4, name : 'arcade cabinet',description : 'Something easy to do!', difficulty : 5, picture : 'arcade.jpg', category_id : 3},
         ];
 
         app.steps = [
             {id : 1, n : 1, name : 'Start your project', description : "You'll need a basic set of tools and some wood", prev : '', next : 2, picture : '1-1.jpg', howto_id : 1},
             {id : 2, n : 2, name : 'Cut the pieces', description : "Take your time, follow the plans and cut the needed pieces", prev : 1, next : 3, picture : '1-2.jpg', howto_id : 1},
             {id : 3, n : 3, name : 'Assembly and finish', description : "Take the pieces together following the plan, and GO! Use a coat of oil to finish", prev : 2, next : '', picture : '1-3.jpg', howto_id : 1},
+            {id : 4, n : 1, name : 'Go to Ikea', description : "Get a table", prev : '', next : '', picture : '2-1.jpg', howto_id : 2},
+            {id : 5, n : 1, name : 'Find a stool', description : "You got stool", prev : '', next : '', picture : '3-1.jpg', howto_id : 3},
+            {id : 6, n : 1, name : 'Buy a Razer Arcade Cabinet for a effing load of money', description : "Enjoy 90's gaming experience on hardware worth more than your house", prev : '', next : '', picture : '4-1.jpg', howto_id : 4},
         ];
 
         app.comments = [

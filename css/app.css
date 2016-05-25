@@ -47,7 +47,7 @@ p {
   -moz-transform: translate3d(100px, 0, 0);
   transform: translate3d(100px, 0, 0); }
 
-#logo {
+.logo {
   width: 300px;
   height: 300px;
   position: relative;
@@ -81,7 +81,7 @@ p {
 
 .backimg {
   width: 100%;
-  height: auto;
+  height: 500px;
   background-image: url("../img/box.jpg");
   background-size: cover;
   background-position: center; }
@@ -91,3 +91,6 @@ p {
   .backimg p {
     color: #fff;
     text-shadow: 1px 1px 2px #000; }
+
+.card {
+  height: 215px; }
