@@ -91,9 +91,20 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
                     vm.addCommentToStep = function(comment, step){
                         comment.id = app.comments.length;
 
-                        var newComment = {id : comment.id, name : comment.name, body : comment.body, step_id : step.id};
-                        app.comments.push(newComment);
-                        vm.comments = findCommentsForStep(step.id);
+                        console.log(comment);
+
+                        if(!comment.body){
+                            $mdToast.show(
+                                $mdToast.simple()
+                                    .textContent("You need content to your comment")
+                                    .hideDelay(3000)
+                            );
+                        }
+                        else {
+                            var newComment = {id : comment.id, name : comment.name, body : comment.body, step_id : step.id};
+                            app.comments.push(newComment);
+                            vm.comments = findCommentsForStep(step.id);
+                        }
                     }
 
                     return vm;
