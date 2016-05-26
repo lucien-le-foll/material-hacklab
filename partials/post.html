@@ -1,5 +1,5 @@
 <md-content layout="row" layout-xs="column" layout-alignment="center" layout-padding>
-    <md-content layout="column" layout-padding>
+    <md-content layout="column" layout-padding flex="33" layout-alignment="center center">
         <h2>Post a new howto</h2>
         <md-input-container>
             <label>Name it</label>
@@ -17,8 +17,36 @@
         <p>
             Add up your different steps to help out people doing this howto
         </p>
+        <md-input-container>
+            <label>Title of the step</label>
+            <input type="text" ng-model="step.title">
+        </md-input-container>
+        <md-input-container>
+            <label>Description of the step</label>
+            <input type="text" ng-model="step.description">
+        </md-input-container>
+        <md-button class="md-raised" ng-click="app.addNewStep(step)">
+            Add the step
+            <md-icon>add</md-icon>
+        </md-button>
     </md-content>
-    <md-content layout="row">
-
+    <md-content layout="column" flex>
+        <md-content>
+            <md-content layout="row" ng-repeat="n in app.newHowto" flex="noshrink">
+                <md-card ng-repeat="step in n">
+                    <img src="/img/logo.jpg" alt="step{{ n2+(n-1)*4 }}">
+                    <md-card-content>
+                        <h2>{{ step.name }}</h2>
+                        <p>{{ step.description }}</p>
+                    </md-card-content>
+                </md-card>
+            </md-content>
+        </md-content>
+        <md-content  flex="noshrink" layout="column" layout-alignment="center center">
+            <md-button ui-sref="home" class="md-raised">
+                Send your howto
+                <md-icon>send</md-icon>
+            </md-button>
+        </md-content>
     </md-content>
 </md-content>

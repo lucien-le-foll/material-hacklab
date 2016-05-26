@@ -140,7 +140,28 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
             {id : 4, name : 'Jean-Marc', body : 'How to use a screwdriver ?', step_id : 2},
             {id : 5, name : 'Patrick', body : 'I hate benches', step_id : 3},
             {id : 6, name : 'NumaNuma', body : 'I failed at step 4', step_id : 3},
-        ]
+        ];
+
+        app.newHowto = [
+            [
+                {title : 'Start your project', description : 'Gather the needed materials and find a clean surface'}
+            ]
+        ];
+
+        app.addNewStep = function(step){
+            var newStep = {title : step.title, description : step.description};
+
+            for(var n in app.newHowto){
+                if(app.newHowto[n].length < 4){
+                    app.newHowto[n].push(newStep);
+                }
+                else {
+                    app.newHowto.push([newStep]);
+                }
+            }
+
+            console.log(app.newHowto);
+        }
 
         app.toggleLeft = function(){
             $mdSidenav('left').toggle();
@@ -169,6 +190,8 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
         app.getRandomSpan = function(){
             return Math.floor(Math.random()*3);
         }
+
+        console.log(app.newHowto);
 
         return app;
     })
