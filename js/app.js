@@ -154,13 +154,13 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
             for(var n in app.newHowto){
                 if(app.newHowto[n].length < 4){
                     app.newHowto[n].push(newStep);
+                    step = {};
                 }
                 else {
                     app.newHowto.push([newStep]);
+                    step = {};
                 }
             }
-
-            console.log(app.newHowto);
         }
 
         app.toggleLeft = function(){
@@ -190,8 +190,6 @@ angular.module( 'hacklab', ['ngMaterial', 'ngAnimate', 'ui.router'])
         app.getRandomSpan = function(){
             return Math.floor(Math.random()*3);
         }
-
-        console.log(app.newHowto);
 
         return app;
     })
